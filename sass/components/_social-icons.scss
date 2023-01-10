@@ -1,0 +1,31 @@
+.social-icons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  padding-top: 6px;
+  padding-bottom: 30px;
+  &__item {
+    fill: $icon-grey;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      fill: $text-white;
+      border-radius: 50%;
+      background-color: $light-blue;
+      outline: none;
+    }
+  }
+  &__item--bg-grey {
+    background-color: $grey-icon-bg;
+    border-radius: 50%;
+    fill: $text-white;
+  }
+}

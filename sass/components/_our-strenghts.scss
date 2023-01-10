@@ -1,0 +1,32 @@
+.our-strengths {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  &__item {
+    background-color: $button-grey-background;
+  }
+  &__svg {
+    margin: 25px 100px;
+  }
+  &__headers {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 10px;
+    padding-top: 30px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 1.78;
+    color: $text-grey;
+    letter-spacing: 0.03em;
+    margin: 0;
+  }
+}

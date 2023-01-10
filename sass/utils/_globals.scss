@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-black);
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 94px 0;
+}
+
+svg {
+  vertical-align: middle;
+}

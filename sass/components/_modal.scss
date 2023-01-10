@@ -1,0 +1,178 @@
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.2);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  z-index: 1;
+}
+
+.modal {
+  background-color: $text-white;
+  min-height: 581px;
+  width: 528px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transform: scale(1);
+  transition-duration: 300ms;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  margin: 0px;
+  &__close-button {
+    background-color: $text-white;
+    color: $logo-black;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border-radius: 50%;
+    box-shadow: none;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #0000001a;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+  &__header {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    padding-bottom: 12px;
+    color: #212121;
+    margin: 0px;
+  }
+
+  &__content-submit-button {
+    background: $light-blue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    padding: 10px 76px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $text-white;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+  &__form-section {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    gap: 4px;
+    position: relative;
+    svg {
+      position: absolute;
+      left: 12px;
+      top: 28px;
+      pointer-events: none;
+      fill: currentColor;
+      transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    input {
+      width: 448px;
+      height: 40px;
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      padding-left: 40px;
+      transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    textarea {
+      border: 1px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      resize: none;
+      padding: 12px 16px;
+      transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      &:focus {
+        outline: 1px solid $light-blue;
+      }
+      &::placeholder {
+        font-size: 12px;
+        line-height: 1.166;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+      }
+    }
+    label {
+      font-size: 12px;
+      line-height: 1.166;
+      letter-spacing: 0.01em;
+      color: #757575;
+    }
+    & input:focus {
+      outline: 1px solid $light-blue;
+    }
+    & input:focus + svg {
+      fill: $light-blue;
+    }
+  }
+  &__content-checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-bottom: 30px;
+  }
+  &__content-checkbox-input {
+    margin: 0;
+    appearance: none;
+    border: 2px solid $main-black;
+    border-radius: 2px;
+    width: 16px;
+    height: 15px;
+    margin-right: 8px;
+  }
+  &__content-checkbox-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+  }
+  &__content-checkbox-link {
+    color: $light-blue;
+    text-decoration: underline;
+    padding: 0px 4px;
+  }
+
+  &__content-checkbox-svg {
+    position: absolute;
+    opacity: 0;
+    width: 16px;
+    height: 15px;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__content-checkbox-input:checked + &__content-checkbox-svg {
+    opacity: 1;
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 300ms 300ms ease, visibility 300ms 300ms ease;
+  .modal {
+    transform: scale(0);
+    transition-duration: 300ms;
+  }
+}

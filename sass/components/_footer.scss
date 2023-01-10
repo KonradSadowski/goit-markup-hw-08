@@ -1,0 +1,116 @@
+.footer {
+  background-color: $background-dark;
+  &__wrapper {
+    display: flex;
+  }
+  &__left {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 0px;
+  }
+  &__address {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    padding-top: 20px;
+    font-style: normal;
+  }
+  &__address-item {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $text-white;
+    letter-spacing: 0.03em;
+  }
+  &__address-contact {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $addres-color;
+    text-decoration: none;
+    display: block;
+    letter-spacing: 0.03em;
+    width: fit-content;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+      color: $light-blue;
+    }
+  }
+  &__address-contact--underline {
+    text-decoration: underline;
+  }
+  &__socials {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    fill: $icon-grey;
+    padding-left: 70px;
+    padding-top: 72px;
+  }
+
+  &__socials-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $text-white;
+    margin: 0px;
+  }
+
+  &__form {
+    display: flex;
+    padding-left: 78px;
+    padding-top: 72px;
+    flex-direction: column;
+  }
+
+  &__form-label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $text-white;
+    padding-bottom: 20px;
+  }
+  &__form-clickable {
+    display: flex;
+    gap: 12px;
+  }
+  &__form-clickable-input {
+    padding: 15px 0px 15px 16px;
+    width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: $background-dark;
+    &::placeholder {
+      font-size: 16px;
+      line-height: 1.25;
+      align-items: center;
+      letter-spacing: 0.03em;
+      color: rgba(255, 255, 255, 0.6);
+      opacity: 1;
+    }
+  }
+  &__form-clickable-button {
+    background: $light-blue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: $text-white;
+    gap: 24px;
+    padding: 10px 26px 10px 42px;
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__form-clickable-button-svg {
+    fill: $text-white;
+  }
+}
