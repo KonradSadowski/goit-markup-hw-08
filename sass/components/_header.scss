@@ -4,17 +4,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 24px 0 25px;
+    padding: 16px 0px;
   }
 
   &__nav {
     display: flex;
     align-items: center;
+    padding: 0px 15px;
+    justify-content: space-between;
+    gap: 276px;
+  }
+  &_burger {
+    fill: $main-black;
+    padding: 0px;
+    border: none;
+    background: none;
   }
   &__nav-list {
     list-style: none;
     margin: 0;
     display: flex;
+    display: none;
     padding: 0;
     align-items: center;
     gap: 46px;
@@ -64,6 +74,7 @@
   }
   &__contacts {
     display: flex;
+    display: none;
     gap: 50px;
     padding-right: 12px;
     padding-top: 1px;
