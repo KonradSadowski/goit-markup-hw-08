@@ -150,12 +150,12 @@
           <ul class="our-team__list">
             <li>
               <figure class="our-team__list-item">
-                <img
-                  src="images/product-designer.jpg"
-                  alt="mężczyzna w okularach"
-                  width="270"
-                  height="260"
-                />
+                <picture>
+                  <source srcset="desktop-product-designer.jpg" media="(min-width: 768px)" />
+                  <source srcset="tablet-product-designer.jpg" media="(min-width: 480px)" />
+                  <img src="./images/mobile-product-designer.jpg" alt="mężczyzna w okularach" />
+                </picture>
+
                 <figcaption class="our-team__list-item-description">
                   <span class="our-team__employee-name">John Doe</span>
                   <span class="our-team__employee-job">Product Designer</span>
