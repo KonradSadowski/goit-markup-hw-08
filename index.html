@@ -166,9 +166,35 @@
             <li>
               <figure class="our-team__list-item">
                 <picture>
-                  <source srcset="desktop-product-designer.jpg" media="(min-width: 768px)" />
-                  <source srcset="tablet-product-designer.jpg" media="(min-width: 480px)" />
-                  <img src="./images/mobile-product-designer.jpg" alt="mężczyzna w okularach" />
+                  <source
+                    srcset="
+                      ./images/desktop-product-designer.jpg,
+                      ./images/mobile-product-designer@2x.jpg
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/tablet-product-designer.jpg,
+                      ./images/tablet-product-designer@2x.jpg
+                    "
+                    media="(min-width: 768px, max-width:1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/mobile-product-designer.jpg,
+                      ./images/mobile-product-designer@2x.jpg
+                    "
+                    media="(min-width: 320px, max-width:768px)"
+                  />
+                  <img
+                    src="./images/mobile-product-designer.jpg"
+                    srcset="
+                      ./images/mobile-product-designer.jpg,
+                      ./images/mobile-product-designer@2x.jpg
+                    "
+                    alt="uśmiechnięty mężczyzna w okularach"
+                  />
                 </picture>
 
                 <figcaption class="our-team__list-item-description">

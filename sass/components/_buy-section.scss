@@ -1,7 +1,8 @@
 .offer {
   background-color: $background-dark;
   background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%),
-    url('../images/mobile-background-main-image.jpg');
+    url('../images/mobile-background-main-image@2x.jpg');
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   &__content {
