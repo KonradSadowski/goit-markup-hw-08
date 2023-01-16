@@ -8,9 +8,11 @@
   margin: 0;
   &__item {
     background-color: $button-grey-background;
+    padding: 25px 0px;
+    display: flex;
+    justify-content: center;
   }
   &__svg {
-    margin: 25px 190px;
   }
   &__headers {
     font-weight: 700;
