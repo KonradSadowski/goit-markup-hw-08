@@ -50,6 +50,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    max-width: 1200px;
+    margin: 0 auto;
     &__content {
       justify-content: center;
       display: flex;
