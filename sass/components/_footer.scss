@@ -1,6 +1,6 @@
 .footer {
   background-color: $background-dark;
-  
+
   &__wrapper {
     display: flex;
     flex-direction: column;
@@ -262,6 +262,9 @@
       display: flex;
       flex-wrap: nowrap;
       padding: 60px 0px;
+      align-items: center;
+      max-width: 1170px;
+      margin: 0 auto;
     }
     &__left {
       display: flex;

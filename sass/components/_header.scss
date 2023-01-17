@@ -200,6 +200,9 @@
 @include desktop {
   .header {
     border-bottom: 1px solid #ececec;
+    align-items: center;
+    max-width: 1170px;
+    margin: 0 auto;
     &__wrapper {
       padding: 25px 15px;
       display: flex;
