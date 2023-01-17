@@ -2,6 +2,9 @@
   border-bottom: 1px solid #ececec;
   &__wrapper {
     padding: 10px 0px;
+    align-items: center;
+    max-width: 1170px;
+    margin: 0 auto;
   }
 
   &__nav {
