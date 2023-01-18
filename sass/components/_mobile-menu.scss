@@ -26,7 +26,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 48px 83px 48px 40px;
+  padding: 48px 0px 48px 40px;
   background-color: $text-white;
   z-index: 999;
   transform: translateX(100%);
@@ -47,6 +47,10 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  &__containter {
+    display: flex;
+  }
   &__list {
     list-style: none;
     display: flex;
@@ -104,6 +108,7 @@
   &__socials {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
   }
   &__line {
     width: 22px;
