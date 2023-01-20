@@ -11,12 +11,11 @@
   display: flex;
   flex-wrap: wrap;
   z-index: 1;
+  padding: 0px 159px;
 }
 
 .modal {
   background-color: $text-white;
-  max-height: 90%;
-  max-width: 95%;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -135,7 +134,6 @@
 
     align-items: center;
     padding-bottom: 30px;
-    
   }
   &__content-checkbox-input {
     margin: 0;
@@ -156,8 +154,6 @@
   &__content-checkbox-link {
     color: $light-blue;
     text-decoration: underline;
-    
-    
   }
 
   &__content-checkbox-svg {

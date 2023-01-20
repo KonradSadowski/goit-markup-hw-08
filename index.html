@@ -16,67 +16,62 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="container header__wrapper">
-        <nav class="header__nav">
-          <a href="./index.html" class="logo">Web<span class="logo--black">Studio</span> </a>
-          <button
-            class="menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
+    <header class="header container">
+      <nav class="header__nav">
+        <a href="./index.html" class="logo">Web<span class="logo--black">Studio</span> </a>
+        <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <svg
-              width="24"
-              height="24"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clip-rule="evenodd"
-              ></path>
-            </svg>
-          </button>
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
 
-          <ul class="header__nav-list">
-            <li>
-              <a class="header__nav-item header__nav-item--active" href="index.html">Agencja</a>
-            </li>
-            <li>
-              <a class="header__nav-item" href="portfolio.html">Portfolio</a>
-            </li>
-            <li>
-              <a class="header__nav-item" href="contact.html">Kontakt</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="header__contacts">
-          <a class="header__contacts-item" href="mailto:info@devstudio.com">
-            <svg class="header__contacts-item-icon-mail" width="16" height="12">
-              <use href="./images/icons.svg#icon-envelope"></use>
-            </svg>
-            info@devstudio.com
-          </a>
+        <ul class="header__nav-list">
+          <li>
+            <a class="header__nav-item header__nav-item--active" href="index.html">Agencja</a>
+          </li>
+          <li>
+            <a class="header__nav-item" href="portfolio.html">Portfolio</a>
+          </li>
+          <li>
+            <a class="header__nav-item" href="contact.html">Kontakt</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__contacts">
+        <a class="header__contacts-item" href="mailto:info@devstudio.com">
+          <svg class="header__contacts-item-icon-mail" width="16" height="12">
+            <use href="./images/icons.svg#icon-envelope"></use>
+          </svg>
+          info@devstudio.com
+        </a>
 
-          <a class="header__contacts-item" href="tel:+48111111111">
-            <svg class="header__contacts-item-icon-tel" width="10" height="16">
-              <use href="./images/icons.svg#icon-smartphone"></use>
-            </svg>
-            +48 111 111 111
-          </a>
-        </div>
+        <a class="header__contacts-item" href="tel:+48111111111">
+          <svg class="header__contacts-item-icon-tel" width="10" height="16">
+            <use href="./images/icons.svg#icon-smartphone"></use>
+          </svg>
+          +48 111 111 111
+        </a>
       </div>
     </header>
     <main>
-      <section class="offer">
-        <div class="container offer__content">
-          <h1 class="offer__title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-          <button class="offer__button" type="button" data-modal-open>Zamów usługe</button>
-        </div>
-      </section>
-
+      <div class="background">
+        <section class="offer">
+          <div class="container offer__content">
+            <h1 class="offer__title">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+            <button class="offer__button" type="button" data-modal-open>Zamów usługe</button>
+          </div>
+        </section>
+      </div>
       <section class="section">
         <div class="container">
           <ul class="our-strengths">
